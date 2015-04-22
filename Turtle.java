@@ -9,6 +9,7 @@ import java.awt.*;
  *
  * Copyright Georgia Institute of Technology 2004
  * @author Barb Ericson ericson@cc.gatech.edu
+ * @author Christian Blydt-Hansen cebh26@gmail.com
  */
 public class Turtle extends SimpleTurtle
 {
@@ -120,6 +121,17 @@ public class Turtle extends SimpleTurtle
 		turn(90);
 	}
 
+	/**
+	 * Creates a border with squares in the corners, a rectangle around the picture, and 4 lines around the picture.
+	 * 
+	 * 
+	 * @param squareLength the length of each side of each of the four rectangles in each corner of the picture
+	 * @param rectangleWidth the width of the rectangle being drawn as an inner border
+	 * @param rectangleHeight the height of the rectangle being drawn as an inner border
+	 * @param lineDistance the distance from each border of the picture that the 4 lines will be drawn
+	 * @param penWidth the width of the pen the turtle will be drawing with
+	 * @param penColor the color of the pen the turtle will be drawing with
+	 */
 	public void createBorder1(int squareLength, int rectangleWidth, int rectangleHeight, int lineDistance, int penWidth, Color penColor) {
 		Picture pic = this.getPicture();
 		this.setPenWidth(penWidth);
